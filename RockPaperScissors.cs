@@ -4,37 +4,35 @@ using System.IO;
 Random r1 = new Random();
 int computerMoveInt = r1.Next(1,3);
 
-public struct MoveStrings
-{
 string computerMoveStr;
 string playerMoveStr;
-}
-
-const int Rock = 1;
-const int Paper = 2;
-const int Scissors = 3;
 
 
-if (computerMoveInt == Rock)
+const int rock = 1;
+const int paper = 2;
+// const int Scissors = 3;
+
+
+if (computerMoveInt == rock)
 {
     computerMoveStr = "Rock";
 }
-else if (computerMoveInt == Paper)
+else if (computerMoveInt == paper)
 {
     computerMoveStr = "Paper";
 }
-else if (computerMoveInt == Scissors)
+else 
 {
     computerMoveStr = "Scissors";
 }
 
 Console.WriteLine("Computer has chosen Move, Your turn (1 = rock, 2 = Paper and 3 = Scissors)");
 int playerMoveInt = Convert.ToInt32(Console.ReadLine());
-if (playerMoveInt == 1)
+if (playerMoveInt == rock)
 {
     playerMoveStr = "Rock";
 }
-else if (playerMoveInt == 2)
+else if (playerMoveInt == paper)
 {
     playerMoveStr = "Paper";
 }
