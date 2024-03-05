@@ -72,7 +72,7 @@ void DecideWinner(int computerMoveInteger, int playerMoveInteger, string playerM
         }
         else 
         {
-            PlayerWins(playerMoveStr, computerMoveStr);
+            PlayerWins(playerMoveStr, computerMoveStr); // if none of the previous conditions are met Player Wins
         }
     }
     else 
